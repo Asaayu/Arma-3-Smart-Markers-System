@@ -1,5 +1,7 @@
 # Arma 3 Smart Markers System
 A smart marker system based on the Arma 3 Apex Old Man smart marker system.
+
+There is an example mod and example missions that you can use as an example of how to install the system into your content.
 ## Adding smart markers to your content
 First you will need to add the functions for the smart marker system to your `CfgFunctions` class.
 
