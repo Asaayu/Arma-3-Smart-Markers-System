@@ -1,2 +1,2 @@
-# Arma-3-Smart-Markers-System
-A custom system based on the Arma 3 Old Man smart marker system.
+# Arma 3 Smart Markers System
+Based on the original system used in Arma 3's Old Man Smart Marker System.
