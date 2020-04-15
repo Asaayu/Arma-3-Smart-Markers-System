@@ -58,3 +58,5 @@ class NAME
 
 **TOOLTIP_DESCRIPTION** - Text which will be used as the description for the map tooltip, if it is a localization key then it will be localized using the stringtable
 
+# Need Help?
+Contact me on discord @ Asaayu#1337
