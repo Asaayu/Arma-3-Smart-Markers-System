@@ -1,14 +1,26 @@
 # Arma 3 Smart Markers System
 A smart marker system based on the Arma 3 Apex Old Man smart marker system.
-## Adding smart markers to your content 
+## Adding smart markers to your content
+First you will need to add the functions for the smart marker system to your `CfgFunctions` class.
+
+Copy the functions folder inside `functions_f_smart_marker`, this folder contains all the files needed.
+
+Then copy from the `cfgfunctions.hpp` file the `functions_f_smart_marker` class into your Cfgfunctions class.
+
+**Make sure that the file paths are correct or else it will error out on mission start!**
+
 #### Adding to your mod
 To add smart markers to your mod you will need to do the following,
-- Create a `smart_markers` class in the base config file
-- Add your markers as children classes following the format below
+- Create a `smart_markers` class in the base config file.
+- Add your markers as children classes following the marker class format below.
 #### Adding to your mission
 To add smart markers to your mission you will need to do the following,
-- Create a `smart_markers` class in your description.ext file
-- Add your markers as children classes following the format below
+- Create a `smart_markers` class in your description.ext file.
+- Add your markers as children classes following the marker class format below.
+
+Add `call SMART_MARKER_fnc_server_setup_init;` to your `initServer.sqf` file.
+
+Add `call SMART_MARKER_fnc_client_setup_init;` to your `initPlayerLocal.sqf` file.
 
 ## Marker Class Format
 ```
@@ -43,3 +55,4 @@ class NAME
 **TOOLTIP_IMAGE** - Text which will be used as the file path for the map tooltip image. Make sure your images are 2^n and in paa/jpg format
 
 **TOOLTIP_DESCRIPTION** - Text which will be used as the description for the map tooltip, if it is a localization key then it will be localized using the stringtable
+
